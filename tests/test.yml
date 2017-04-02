@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - my-ec2_sg

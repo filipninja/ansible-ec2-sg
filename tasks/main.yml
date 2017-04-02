@@ -1,0 +1,11 @@
+---
+# tasks file for my-ec2_sg
+
+- name: Create security group
+  ec2_group:
+    name: "{{ name }"
+    description: {{ description }}
+    vpc_id: "{{ vpc }}"
+    region: "{{ region }}"
+    rules: "{{ rules }}"
+    state: "{{ state }}"
